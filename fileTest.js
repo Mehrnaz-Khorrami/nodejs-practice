@@ -1,4 +1,8 @@
-const fs = require("fs").promises;
+import { getCurrentTime } from "./timeUtil.js";
+import fs from "fs/promises";
+
+console.log(getCurrentTime());
+
 const writeDate = async () => {
     try{
        const date = new Date().toLocaleString();
